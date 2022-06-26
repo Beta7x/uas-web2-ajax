@@ -22,7 +22,7 @@
         <h5 class="modal-title" id="exampleModalLabel">Add New Product</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="#" method="POST" id="add_product_form" enctype="multipart/form-data">
+      <form action="/store" method="POST" id="add_product_form" enctype="multipart/form-data">
         @csrf
         <div class="modal-body p-4 bg-light">
           <div class="row">
@@ -96,7 +96,7 @@
         <h5 class="modal-title" id="exampleModalLabel">Edit Product</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <form action="#" method="POST" id="edit_product_form" enctype="multipart/form-data">
+      <form action="/update" method="POST" id="edit_product_form" enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="product_id" id="product_id">
         <div class="modal-body p-4 bg-light">
