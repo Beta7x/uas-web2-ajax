@@ -79,7 +79,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          <button type="submit" id="add_product_btn" class="btn btn-primary">Add Employee</button>
+          <button type="submit" id="add_product_btn" class="btn btn-primary">Add Product</button>
         </div>
       </form>
     </div>
@@ -154,7 +154,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          <button type="submit" id="edit_product_btn" class="btn btn-success">Update Employee</button>
+          <button type="submit" id="edit_product_btn" class="btn btn-success">Update Product</button>
         </div>
       </form>
     </div>
@@ -203,7 +203,7 @@
             if (response.status == 200) {
               Swal.fire(
                 'Added!',
-                'Employee Added Successfully!',
+                'Product Added Successfully!',
                 'success'
               )
               fetchAllProducts();
@@ -254,7 +254,7 @@
             if (response.status == 200) {
               Swal.fire(
                 'Updated!',
-                'Employee Updated Successfully!',
+                'Product Updated Successfully!',
                 'success'
               )
               fetchAllProducts();
